@@ -1,0 +1,66 @@
+:root {
+  --bg: #0f1724;
+  --accent: #fda4af;
+  --muted: #9aa4b2;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+}
+body {
+  background:
+    radial-gradient(1200px 600px at 10% 10%, rgba(253,164,175,0.08), transparent 8%),
+    radial-gradient(900px 400px at 90% 90%, rgba(139,92,246,0.06), transparent 6%),
+    var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  color: #fff;
+}
+.images-card {
+  width: 100%;
+  max-width: 900px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.04);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+  text-align: center;
+}
+.images-card h1 {
+  margin-bottom: 20px;
+}
+.image-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.img-box {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 6px 18px rgba(124,58,237,0.14);
+}
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+footer {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 13px;
+}
+#confettiCanvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
