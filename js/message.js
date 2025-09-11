@@ -104,5 +104,6 @@ muteBtn.addEventListener('click', () => {
 
 /* Redirect to images page */
 viewImagesBtn.addEventListener('click', () => {
-  window.location.href = "html/images.html";
+  window.location.href = "images.html";
 });
+
